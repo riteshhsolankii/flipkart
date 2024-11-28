@@ -1,8 +1,103 @@
-@media only screen and (min-width: 992px) and (max-width: 1024px) {
+@media only screen and (min-width: 1400px) {
+  .container {
+    max-width: 1920px;
+  }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (max-width: 1025px) {
+  /* Header Start */
+  .header-section {
+    padding: 30px 0px;
+  }
+  /* Header End */
+
+  /* Banner Start */
+  .banner-image img {
+    height: 550px;
+  }
+  /* Banner End */
 }
 
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media only screen and (max-width: 992px) {
+  /* Header Start */
+  .header-sign-in {
+    display: none;
+  }
+  .header-center-items-inner {
+    display: none;
+  }
+  .search-icon {
+    display: none;
+  }
+  .header-section .header-left-items {
+    flex: 0 0 60%;
+    max-width: 60%;
+    order: 2;
+    text-align: center;
+  }
+  .header-section .header-right-items {
+    flex: 0 0 20%;
+    max-width: 20%;
+    order: 2;
+  }
+  .header-section .header-center-items {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+  .header-right-items-inner {
+    justify-content: flex-end;
+    gap: 25px;
+  }
+  .humburger-icon {
+    display: block;
+  }
+  .header-wishlist {
+    display: none;
+  }
+  .header-section {
+    padding: 22px 0px;
+  }
+  /* Header End */
+}
+
+@media only screen and (max-width: 768px) {
+  /* Headar Start */
+  .header-section {
+    padding: 25px 0px;
+  }
+
+  /* Headar End */
+}
+
+@media only screen and (max-width: 480px) {
+  /* Headar Start */
+  .header-section {
+    padding: 20px 0px;
+  }
+  .header-left-items-inner a img {
+    max-width: 190px;
+  }
+  .header-section .header-center-items {
+    flex: 0 0 15%;
+    max-width: 15%;
+  }
+  .header-section .header-right-items {
+    flex: 0 0 15%;
+    max-width: 15%;
+  }
+  .header-section .header-left-items {
+    flex: 0 0 70%;
+    max-width: 70%;
+  }
+  .header-mobile {
+    min-width: 320px;
+  }
+
+  /* Headar End */
+
+  /* Banner Start */
+  .banner-image img {
+    height: 300px;
+  }
+  /* Banner end */
 }
