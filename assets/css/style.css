@@ -93,6 +93,11 @@ li {
 :root {
   --black: #000;
   --white: #fff;
+  --primary: #3b8373;
+}
+::selection {
+  background-color: var(--primary);
+  color: var(--white);
 }
 /* Global Css End */
 
@@ -100,6 +105,7 @@ li {
 .header-section {
   background: var(--white);
   padding: 40px 0px;
+  transition: all 0.5s;
 }
 .header-section .header-main {
   display: flex;
@@ -246,7 +252,7 @@ li {
   bottom: -3px;
   width: 0%;
   height: 0.5px;
-  background: black;
+  background: var(--black);
   transition: width 0.3s;
 }
 .header-mobile nav ul li a:hover::after {
@@ -262,12 +268,79 @@ li {
   gap: 13px;
   margin-top: 20px;
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: white;
+  z-index: 9;
+  right: 0;
+  padding: 30px 0;
+}
 /* Header End */
 
 /* Banner Start */
+.banner-main {
+  position: relative;
+  height: 700px;
+  overflow: hidden;
+}
 .banner-image img {
   width: 100%;
-  height: 700px;
+  height: 100%;
   object-fit: cover;
+}
+.banner-overlay {
+  height: 100%;
+  width: 100%;
+  background-color: #00000087;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.banner-content-main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.banner-content-inner h1 {
+  font-size: 45px;
+  text-align: center;
+  color: var(--white);
+  line-height: 65px;
+  font-weight: 500;
+}
+.banner-content-inner p {
+  color: var(--white);
+  text-align: center;
+  font-size: 15px;
+  line-height: 23px;
+  font-weight: 300;
+  padding: 15px 0;
+}
+.banner-btn-main {
+  text-align: center;
+}
+.banner-btn-main a {
+  padding: 15px 20px;
+  transition: all 0.5s;
+}
+a.banner-men-collection {
+  background: var(--white);
+  color: var(--black);
+}
+a.banner-men-collection:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+a.banner-women-collection {
+  background: var(--primary);
+  color: var(--white);
+  margin-left: 20px;
+}
+a.banner-women-collection:hover {
+  background: var(--white);
+  color: var(--black);
 }
 /* Banner End */

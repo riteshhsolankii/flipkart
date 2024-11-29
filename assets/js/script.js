@@ -11,3 +11,15 @@ menuBtn.addEventListener("click", function () {
 closeBtn.addEventListener("click", function () {
   menuItems.classList.remove("menu-show");
 });
+
+
+// Sticky Header Start
+
+window.addEventListener("scroll", function(){
+  const headerMain = document.querySelector("#header");
+  if(window.scrollY > 50){
+    headerMain.classList.add("sticky");
+  } else {
+    headerMain.classList.remove("sticky")
+  }
+});
