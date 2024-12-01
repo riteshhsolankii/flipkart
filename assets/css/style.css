@@ -303,12 +303,7 @@ li {
   transform: scale(0);
   opacity: 0;
 }
-.search-inner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
+
 .search-panel-show {
   visibility: visible;
   transform: scale(1);
@@ -350,6 +345,9 @@ li {
   position: absolute;
   top: 15px;
   right: 15px;
+}
+.search-inner-main {
+  width: 100%;
 }
 /* Header End */
 
